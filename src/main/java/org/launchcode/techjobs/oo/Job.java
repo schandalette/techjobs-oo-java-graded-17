@@ -21,6 +21,7 @@ public class Job {
         id = nextId;
         nextId++;
     }
+
     //constructor to initialize all fields and call default constructor
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
         this();
@@ -99,7 +100,7 @@ public class Job {
     public String toString() {
         String newLine = System.lineSeparator();
         if (name == null && employer == null && location == null && positionType == null &&
-        coreCompetency == null) {
+                coreCompetency == null) {
             return "OOPS! This job does not seem to exist.";
         }
         return newLine + "ID: " + id + newLine +
