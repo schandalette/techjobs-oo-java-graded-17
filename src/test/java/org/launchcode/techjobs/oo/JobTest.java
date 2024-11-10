@@ -46,4 +46,52 @@ public class JobTest {
                 new CoreCompetency("Grit"));
         assertFalse(job1.equals(job2));
     }
+
+    @Test
+    public void testToStringStartsAndEndsWithNewLine() {
+        Job job1 = new Job("Web Dev", new Employer("Walmart"),
+                new Location("East St. Louis"), new PositionType("Full Stack"),
+                new CoreCompetency("Grit"));
+        String newLine = System.lineSeparator();
+        String jobString = job1.toString();
+        String jobStart = newLine;
+        String jobEnd = newLine;
+
+        assertTrue(jobString.startsWith(newLine) && jobString.endsWith(newLine));
+    }
+
+    @Test
+    public void testToStringContainsCorrectLabelsAndData() {
+        String newLine = System.lineSeparator();
+        Job job1 = new Job("Web Dev", new Employer("Walmart"),
+                new Location("East St. Louis"), new PositionType("Full Stack"),
+                new CoreCompetency("Grit"));
+        String jobString = job1.toString();
+        String expectedFormat = newLine +"ID: " + job1.getId() + newLine +
+                "Name: Web Dev" + newLine +
+                "Employer: Walmart" + newLine +
+                "Location: East St. Louis" + newLine +
+                "Position Type: Full Stack" + newLine +
+                "Core Competency: Grit" + newLine;
+        assertEquals(expectedFormat, jobString);
+    }
+
+    @Test
+    public void testToStringHandlesEmptyField() {
+        String newLine = System.lineSeparator();
+        Job job1 = new Job("Web Dev", new Employer("Walmart"),
+                new Location(""), new PositionType("Full Stack"),
+                new CoreCompetency("Grit"));
+        String jobString = job1.toString();
+        String expectedFormat = newLine +"ID: " + job1.getId() + newLine +
+                "Name: Web Dev" + newLine +
+                "Employer: Walmart" + newLine +
+                "Location: Data not available" + newLine +
+                "Position Type: Full Stack" + newLine +
+                "Core Competency: Grit" + newLine;
+
+        assertEquals(expectedFormat, jobString);
+    }
+
+
 }
