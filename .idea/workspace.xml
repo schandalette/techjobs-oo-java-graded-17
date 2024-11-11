@@ -8,9 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="task 6 completed and passed all tests">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="updated main to test print out and to check empty job" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -270,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731275530372</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updated main to test print out and to check empty job">
+      <option name="closed" value="true" />
+      <created>1731293606986</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731293606986</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -289,6 +295,7 @@
     <MESSAGE value="task 4 completed and passed" />
     <MESSAGE value="task 5 completed and passed" />
     <MESSAGE value="task 6 completed and passed all tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 6 completed and passed all tests" />
+    <MESSAGE value="updated main to test print out and to check empty job" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated main to test print out and to check empty job" />
   </component>
 </project>
